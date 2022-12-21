@@ -1,4 +1,6 @@
-<h1>show page</h1>
-<a href = "/books>Return</a>
+<h1>Books</h1>
+<a href="/books">Return</a>
 <div>Title: <%= @book.title %></div>
 <div>Author: <%= @book.author %></div>
+<%= button_to "Edit", edit_book_path, method: :get %>
+<%= button_to "Delete", @book, method: :delete %>
